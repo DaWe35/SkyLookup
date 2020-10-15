@@ -12,7 +12,7 @@ function touchDir(dir) {
 
 
 function allPossibleCombinations(input, length, curstr) {
-    if(curstr.length == length) return [ curstr ];
+    if (curstr.length == length) return [ curstr ];
     var ret = [];
     for(var i = 0; i < input.length; i++) {
         ret.push.apply(ret, allPossibleCombinations(input, length, curstr + input[i]));
