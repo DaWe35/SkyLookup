@@ -1,0 +1,16 @@
+<script src="lookup.js"></script>
+<script>
+	let skylookup = new SkyLookUp('examples/index.txt');
+	function search() {
+		let str = document.getElementById('input_str').value
+		skylookup.lookup(str, searchCallback)
+	}
+
+	function searchCallback(result) {
+		document.getElementById('print').innerHTML = result
+	}
+</script>
+
+<p id="print">Please input a word from a.txt or m.txt, for example "sia", "skynet", "moon", "hodl"</p>
+
+<input id="input_str" placeholder="what to search for?"><button onclick="search()">Search!</button>

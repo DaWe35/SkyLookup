@@ -1,0 +1,3 @@
+index # notes after the first space
+a examples/a.txt
+m examples/m.txt
