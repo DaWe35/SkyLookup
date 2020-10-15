@@ -1,6 +1,6 @@
 <script src="lookup.js"></script>
 <script>
-	let skylookup = new SkyLookUp('examples/index.txt');
+	let skylookup = new SkyLookUp('data/index.txt');
 	function search() {
 		let str = document.getElementById('input_str').value
 		skylookup.lookup(str, searchCallback)

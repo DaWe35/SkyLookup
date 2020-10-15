@@ -47,8 +47,9 @@ class SkyLookUp {
 					if (typeof lines[i+1] == 'undefined') {
 						found = lines[i].split(' ')[1]
 					} else {
+						console.log(i, lines[i])
 						var words = lines[i+1].split(' ')
-						if (words[0] > searchText) {
+						if (words[0] > searchText || lines[i+1] == '\n' || lines[i+1] == '') {
 							found = lastWord
 						}
 					}
@@ -64,9 +65,11 @@ class SkyLookUp {
 				for (var i = 0; i < lines.length; i++){
 					if (lines[i].startsWith(searchText + ' ')) {
 						let words = lines[i].split(' ')
-						callback(words[1]);
+						callback(words[1])
+						return
 					}
 				}
+				changePrint('Not found :(')
 			} else {
 				console.log('ERROR: invaid index file')
 			}
