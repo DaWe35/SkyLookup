@@ -17,7 +17,6 @@ class SkyLookUp {
 		function ajaxGet(url) {
 			var xhttp = new XMLHttpRequest()
 			xhttp.onreadystatechange = function() {
-				console.log(this.readyState, this.status)
 				if (this.readyState == 4 && this.status == 200) {
 					changePrint(null) // remove print warning
 					parseData(this.responseText)
@@ -51,12 +50,14 @@ class SkyLookUp {
 						var words = lines[i+1].split(' ')
 						if (words[0] > searchText || lines[i+1] == '\n' || lines[i+1] == '') {
 							found = lastWord
+							console.log('found', found)
 						}
 					}
 
 					if (found == null) {
 						lastWord = words[1]
 					} else {
+						console.log('preindex found:', found)
 						ajaxGet(found)
 						break;
 					}
@@ -66,6 +67,7 @@ class SkyLookUp {
 					if (lines[i].startsWith(searchText + ' ')) {
 						let words = lines[i].split(' ')
 						callback(words[1])
+						console.log('index found:', words[0])
 						return
 					}
 				}
