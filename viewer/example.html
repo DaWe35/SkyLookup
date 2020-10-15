@@ -11,6 +11,18 @@
 	}
 </script>
 
-<p id="print">Please input any 1-5 character lowercase word, for example "sia", "skydb", "moon", or "hodl" and I'll find it in the 11 million word database!</p>
+<style>
+	body {
+		margin: 20px;
+	}
+	input, button {
+		padding: 20px;
+		font-size: 20px;
+	}
+</style>
 
-<input id="input_str" placeholder="what to search for?"><button onclick="search()">Search!</button>
+<p id="print">Please input any 1-4 length lowercase word, for example "sia", "skydb", "moon", or "hodl" and I'll find it in the 11 million word database!</p>
+
+<input id="input_str" placeholder="type 4 lowercase letters here"><button onclick="search()">Search!</button>
+
+<p>Hey, the <a href="data/index.txt">index files</a> are human readable! Source: <a href="https://github.com/DaWe35/SkyLookup">GitHub</a></p>

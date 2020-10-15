@@ -1,8 +1,10 @@
 # SkyLookup
 
-SkyLookup is an directory-tree based indexed key-value database.
+While [MiniSearch](https://github.com/lucaong/minisearch) is a great in-browser search engine for full-text,
+it can not handle more than some MBs of data.
+SkyLookup is a bit different. It is a directory-tree based indexed key-value database.
+You can only store string pairs, but it can handle any amount of rows and it does only 2-4 HTTP requests.
 
-While it is limited to key-value pairs, it can handle more than a million rows in-browser.
 SkyLookup stores the data in alphabetical order in multiple files, and even if you have a 1000 files (1 million rows), it will make only 2 ajax requests to find the result.
 
 Try it out: soon

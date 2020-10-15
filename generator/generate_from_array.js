@@ -26,7 +26,7 @@ function generateExampleDict() {
 	// let input = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o' ]
 	var data = {}; // create an empty array
 	
-	for (let i = 1; i <= 5; i++) {
+	for (let i = 1; i <= 4; i++) {
 		let combArray = allPossibleCombinations(input, i, '')
 		combArray.forEach(element => {
 			data[element] = "This_is_an_example_value_for_key_" + element
