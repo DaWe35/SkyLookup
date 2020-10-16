@@ -1,5 +1,7 @@
 # SkyLookup
 
+Demo: https://siasky.net/NAC25yabWhK7AF0h0uJ-rrgAlIl0uyQnx8jQAhdJWVjqtw/
+
 While [MiniSearch](https://github.com/lucaong/minisearch) is a great in-browser search engine for full-text,
 it can not handle more than some MBs of data.
 SkyLookup is a bit different. It is a directory-tree based indexed key-value database.
