@@ -4,7 +4,7 @@ Demo: https://siasky.net/NAC25yabWhK7AF0h0uJ-rrgAlIl0uyQnx8jQAhdJWVjqtw/
 
 While [MiniSearch](https://github.com/lucaong/minisearch) and [AlaSQL](http://alasql.org/) are great in-browser full-text & SQL engines,
 they can not handle GBs of data because of RAM limits.
-SkyLookup is a bit different. It is a directory-tree shaped file based index.
+SkyLookup is a bit different. It is a [Radix-tree](https://en.wikipedia.org/wiki/Radix_tree) (or radix trie) based file index.
 
 # Performance
 
