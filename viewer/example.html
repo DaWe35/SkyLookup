@@ -14,15 +14,47 @@
 <style>
 	body {
 		margin: 20px;
+		background: #1d1e21;
+		color: #FFF;
+		font-family: sans-serif;
+		text-align: center;
+		font-size: 120%;
 	}
 	input, button {
-		padding: 20px;
+		padding: 20px 40px;
 		font-size: 20px;
+		background: #25272a;
+		color: #FFF;
+		border: none;
 	}
+	button {
+		background: #333538;
+		color: #19cf86;
+	}
+	input {
+		width: 300px;
+	}
+	a, a:hover {
+		color: #FFF;
+	}
+	h1 {
+		margin-top: 50px;
+	}
+	.schbox {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
 </style>
 
-<p id="print">Please input any 1-4 length lowercase word, for example "sia", "skydb", "moon", or "hodl" and I'll find it in the 11 million word database!</p>
+<h1>SkyLookup demo</h1>
 
-<input id="input_str" placeholder="type 4 lowercase letters here"><button onclick="search()">Search!</button>
+<div class="schbox">
+	<p id="print">Please input any 1-4 length word (can contain lower/uppercase letters and numbers), for example "Sia", "SkyDB", "6453", or "hold"<br>
+		SkyLookup will find it in the 13 million word database!</p>
 
-<p>Hey, the <a href="data/index.txt">index files</a> are human readable! Source: <a href="https://github.com/DaWe35/SkyLookup">GitHub</a></p>
+	<input id="input_str" placeholder="Type 4 letters or numbers"><button onclick="search()">Search!</button>
+</div>
+
+<p>Hey, the 615 MB <a href="data/index.txt">index files</a> are human readable ;)</p>
+<p>Source: <a href="https://github.com/DaWe35/SkyLookup">GitHub</a></p>

@@ -1,6 +1,6 @@
 # SkyLookup
 
-Demo: https://siasky.net/NAC25yabWhK7AF0h0uJ-rrgAlIl0uyQnx8jQAhdJWVjqtw/
+Demo: https://siasky.net/_AYd-TbEpAakMN_L2iuotjrL2A_SD51e2iY9Cs3Xg9BpSg/index.html (13 million rows, 615 MB total size)
 
 While [MiniSearch](https://github.com/lucaong/minisearch) and [AlaSQL](http://alasql.org/) are great in-browser full-text & SQL engines,
 they can not handle GBs of data because of RAM limits.
