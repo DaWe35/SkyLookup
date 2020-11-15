@@ -46,7 +46,6 @@ class SkyLookUp {
 					if (typeof lines[i+1] == 'undefined') {
 						found = lines[i].split(' ')[1]
 					} else {
-						console.log(i, lines[i])
 						var words = lines[i+1].split(' ')
 						if (words[0] > searchText || lines[i+1] == '\n' || lines[i+1] == '') {
 							found = lastWord

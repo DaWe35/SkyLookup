@@ -1,10 +1,10 @@
 # SkyLookup
 
-Demo: https://siasky.net/_AYd-TbEpAakMN_L2iuotjrL2A_SD51e2iY9Cs3Xg9BpSg/index.html (13 million rows, 615 MB total size)
+Demo: https://siasky.net/_AYYC9KGq009LF8mD1D2J6yjCoBm0i9yLR64pTX3aOWL6Q/index.html (13 million rows, 615 MB total size)
 
 While [MiniSearch](https://github.com/lucaong/minisearch) and [AlaSQL](http://alasql.org/) are great in-browser full-text & SQL engines,
 they can not handle GBs of data because of RAM limits.
-SkyLookup is a bit different. It is a [Radix-tree](https://en.wikipedia.org/wiki/Radix_tree) (or radix trie) based file index.
+SkyLookup is a bit different. It is a modified [Radix-tree](https://en.wikipedia.org/wiki/Radix_tree) (or radix trie) based file index.
 
 # Performance
 
